@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 헤더 영역 */
+.hd { clear:both; width: 100%; border-bottom:3px solid rgb(38, 125, 224); height: 80px; }
+.tnb { float:right; margin-right:20px; }
+.tnb li { float:left; margin:10px; }
+.tnb li a { color:#333; font-size:14px; font-weight:bold; font-family: 'Noto Sans KR', sans-serif; }
+.gnb { clear:both; width: 1000px; margin:20px auto;  }
+.menu { clear:both; }
+.gnb li { float:left; margin-top:10px; width: 20%; text-align:center; }
+.gnb li a { color:#333; font-size:18px; font-weight:bold; font-family: 'Noto Sans KR', sans-serif; background-color: #fff; display:block; line-height: 42px; }
+.gnb li a:hover { color:#fff; background-color:deeppink; }
+
+/* 푸터 영역 */
+.ft { clear:both; width: 100%; background-color: #222; 
+color:#fff; height: 80px; padding-top: 20px; }
+.ft_wrap { width: 1000px; margin: 0 auto;  }

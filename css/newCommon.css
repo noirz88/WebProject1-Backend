@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+* { margin: 0; padding: 0; }
+body, html { width: 100%; height: 100%;background-color:#fbf7f7;}
+ul { list-style: none; }
+a { text-decoration: none; }  
+body, html { width:100%; font-family: 'Nanum Gothic', sans-serif;}
+.logo{ height: 100px; }
+.wrap { clear:both; width:100%;}
+.hd { width: 100%; background-color: #fbf7f7; height:120px;  
+ top: 0; left: 0; z-index:999; }
+.hd_wrap { clear:both; width: 1000px; margin:0 auto; box-sizing:border-box; } 
+.tnb { width: 100%; }
+.tnb .left { float:left; display:block; position:absolute; left:50%; margin-left:-50px;}
+.tnb .right { float:right; }
+.tnb li { float:left; margin-top: 20px; }
+.tnb .left li { margin-right: 20px; }
+.tnb .right li { margin-left: 20px; }
+.tnb li a { color:rgb(0, 0, 0); font-size:16px; }
+.logo { display:block; position:absolute;  top:5px; }
+.gnb { clear:both; width: 100%; }
+.gnb > ul > li { float:left; margin-top: 36px; width: 20%; position:relative; 
+}
+.gnb li a.dp1 { display:block; height: 42px; line-height: 42px; color:#000000;
+text-align:center; background-color:#fbf7f7; }
+.gnb li:hover a.dp1 { background-color:#ECE6CC; }
+.gnb li .sub { visibility:hidden; opacity:0; transition:0.5s; 
+position:absolute; z-index:9999; width: 200px;  }
+.gnb li:hover .sub { visibility: visible; opacity:1; }
+.gnb .sub li { clear:both; height: 40px; line-height: 40px; }
+.gnb .sub li a { display:block; height: 40px; line-height: 40px; color:#eee; background:rgba(22,22,22,0.8); padding-left:20px; }
+.gnb .sub li:hover a { color:orange; }
+
+.ft { background-color: rgb(163, 163, 163); color:rgb(61, 61, 61); width:100%;  font-size: 12px; clear:both;}
+.ft_wrap { width: 1000px; margin: 0 auto; padding-top:3px;}
+.row2 { clear:both;  width:100%; }
+.ft_link { clear:both; width: 1200px; margin:0 auto; height:48px; }
+.ft_link li { float:left; margin-right:20px; }
+.ft_link li a { display:block; line-height:48px; color:#333; font-weight:bold; }
+.ft_link li a:before { content:" | "; }
+.addr, .copyright { width: 1200px; margin:0 auto; font-size:11px; padding-bottom: 5px; }
+.copyright  { padding-bottom:12px; }
+
+.goto_top { float:left; }
+.goto_top a { display:block; line-height:36px; color:#333; width:160px; text-align: center; font-size:11px;  font-family: 'Noto Sans KR', sans-serif; font-weight:bold;
+margin-top:6px; padding-left: 500px; }

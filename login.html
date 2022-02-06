@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOD SLEEP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link  rel= "바로가기 아이콘"  href= "/img/favicon.ico"  type= "image/x-icon" > 
+<link  rel= "icon" href= "/img/favicon.ico"  type= "image/x-icon" >
+<link rel="stylesheet" href="./css/ban.css">
+<style>
+* { margin: 0; padding: 0; }
+body, html { width: 100%; height: 100%;background-color:#fbf7f7;}
+ul { list-style: none; }
+a { text-decoration: none; }  
+body, html { width:100%; font-family: 'Nanum Gothic', sans-serif;}
+.logo{ height: 100px; }
+.wrap { clear:both; width:100%;}
+.hd { width: 100%; background-color: #fbf7f7; height:120px;  
+ top: 0; left: 0; z-index:999; }
+.hd_wrap { clear:both; width: 1000px; margin:0 auto; box-sizing:border-box; } 
+.tnb { width: 100%; }
+.tnb .left { float:left; display:block; position:absolute; left:50%; margin-left:-50px;}
+.tnb .right { float:right; }
+.tnb li { float:left; margin-top: 20px; }
+.tnb .left li { margin-right: 20px; }
+.tnb .right li { margin-left: 20px; }
+.tnb li a { color:rgb(0, 0, 0); font-size:16px; }
+.logo { display:block; position:absolute;  top:5px; }
+.gnb { clear:both; width: 100%; }
+.gnb > ul > li { float:left; margin-top: 36px; width: 20%; position:relative; 
+}
+.gnb li a.dp1 { display:block; height: 42px; line-height: 42px; color:#000000;
+text-align:center; background-color:#fbf7f7; }
+.gnb li:hover a.dp1 { background-color:#ECE6CC; }
+.gnb li .sub { visibility:hidden; opacity:0; transition:0.5s; 
+position:absolute; z-index:9999; width: 200px;  }
+.gnb li:hover .sub { visibility: visible; opacity:1; }
+.gnb .sub li { clear:both; height: 40px; line-height: 40px; }
+.gnb .sub li a { display:block; height: 40px; line-height: 40px; color:#eee; background:rgba(22,22,22,0.8); padding-left:20px; }
+.gnb .sub li:hover a { color:orange; }
+
+.ft { background-color: rgb(163, 163, 163); color:rgb(61, 61, 61); width:100%;  font-size: 12px; clear:both;}
+.ft_wrap { width: 1000px; margin: 0 auto; padding-top:3px;}
+.row2 { clear:both;  width:100%; }
+.ft_link { clear:both; width: 1200px; margin:0 auto; height:48px; }
+.ft_link li { float:left; margin-right:20px; }
+.ft_link li a { display:block; line-height:48px; color:#333; font-weight:bold; }
+.ft_link li a:before { content:" | "; }
+.addr, .copyright { width: 1200px; margin:0 auto; font-size:11px; padding-bottom: 5px; }
+.copyright  { padding-bottom:12px; }
+
+.goto_top { float:left; }
+.goto_top a { display:block; line-height:36px; color:#333; width:160px; text-align: center; font-size:11px;  font-family: 'Noto Sans KR', sans-serif; font-weight:bold;
+margin-top:6px; padding-left: 500px; }
+/* 내부 스타일 */
+
+.frm fieldset { width:600px; padding:40px; margin:20px auto; margin-bottom: 50px; } 
+.indata { display:block; width:400px; height:48px; line-height:48px; text-indent:16px; margin:20px auto; }
+.btn_fr { width:600px; }
+.btn_fr li:first-child { float:left; }
+.btn_fr li:last-child { float:right; }
+.inbtn { display:block; width:240px; height:48px; line-height:48px; text-align:center; 
+background-color:#333; color:#fff; border:0; outline:0; border-radius:28px; }
+.con_tit{ cleat:both; display:block; text-align:center; margin-top: 3%; margin-bottom: 20px; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header class="hd">
+		<div class="hd_wrap">
+			<nav class="tnb">
+				<ul class="left">
+					<li><a href=""><strong>BRANDLESS</strong></a></li>
+				</ul>
+				<a href="main.jsp" class="logo"> <img src="./img/logob.jpg"
+					alt="앰블럼이미지">
+				</a>
+				<ul class="right">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="agreement.jsp">회원가입</a></li>
+					<li><a href="login.jsp">마이페이지</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="hd_wrap">
+			<nav class="gnb">
+				<ul>
+					<li><a href="main.jsp" class="dp1">home</a></li>
+					<li><a href="Brandstory.jsp" class="dp1">Brand story</a></li>
+					<li><a href="showRoom.jsp" class="dp1">쇼룸안내</a></li>
+					<li><a href="GetTestproductListCtrl2" class="dp1">제품목록</a></li>
+					<li><a href="GetTestnoticeListCtrl" class="dp1">게시판</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <section class="content" style="background-color: #fbf7f7;">
+	<h2 class="con_tit">LOGIN</h2>
+	<form action="loginProc.jsp" method="post" class="frm">
+		<fieldset>
+			<input type="text" class="indata" id="m_id" name="m_id" placeholder="아이디 입력" autofocus required />
+			<input type="password" class="indata" id="m_pw" name="m_pw" placeholder="비밀번호 입력" required />
+			<br /><br />
+			<ul class="btn_fr">
+				<li><input type="submit" class="inbtn" value="로그인"/></li>
+				<li><input type="reset" class="inbtn" value="취소"/></li>
+			</ul>
+		</fieldset>
+	</form>
+    </section>
+	<footer class="ft">
+		<div class="ft_wrap">
+			<div class="row2">
+	       		<nav class="ft_link">
+	           		<ul>
+		                  <li><a href="main.jsp">HOME</a></li>
+		                  <li><a href="sub02.jsp">ABOUT US</a></li>
+		                  <li><a href="sub03.jsp">AGREEMENT</a></li>
+		                  <li><a href="sub04.jsp">PRIVACY POLICY</a></li>
+	       			 </ul>
+	       			 <div class="goto_top"><a href="">GOTO TOP ▲</a></div>	
+	       		</nav>
+		       	<div class="addr">
+		          <p>COMPANY :RNC Korea OWNER :서진원<br>
+						ADDRESS : 06241 서울특별시 강남구 테헤란로4길 38-3 (역삼동) 다우빌딩 601호<br>
+						BUSINESS LICENSE : [144-01-14252] ONLINE LICENSE 2012-경기성남-1076 [사업자정보확인]<br>
+						TEL : 1522-7048 FAX : 02-538-7248 E-MAIL : brandless@naver.com<br>
+						WORK TIME : 평일 : 08시-17시30분 주말/공휴일 휴무</p>
+		     	</div>
+	      		<p class="copyright">Copyright © 브랜드리스. All rights reserved.</p>
+	     	</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
